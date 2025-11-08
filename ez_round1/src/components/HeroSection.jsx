@@ -1,6 +1,7 @@
 import React from "react";
 import mandala from "../assets/mandala.png";
 import vfilmsLogo from "../assets/vfilms-logo.png";
+import Navlogo from "../assets/Navbar.png";
 
 const HeroSection = () => {
   return (
@@ -14,6 +15,8 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 max-w-3xl flex flex-col items-center space-y-6">
+        {/* navbarLogo */}
+        <img src={Navlogo} alt="V Films" className="w-48 mb-4" />
         {/* Logo */}
         <img
           src={vfilmsLogo}

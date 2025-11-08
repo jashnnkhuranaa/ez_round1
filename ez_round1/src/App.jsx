@@ -1,9 +1,14 @@
 import React from "react";
-import ContactForm from "./components/Form";
 import HeroSection from "./components/HeroSection";
+import Navbar from "./components/Navbar";
 
 function App() {
-  return <HeroSection />;
+  return(
+  <div>
+    <Navbar />
+    <HeroSection />;
+  </div> 
+  )
 }
 
 export default App;
