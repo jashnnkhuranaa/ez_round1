@@ -24,7 +24,7 @@ export default function Navbar() {
         <img src={menu} alt="menu" className="w-8" />
       </div>
 
-      {/* Mobile View */}
+      {/* mobile view */}
       <div className="md:hidden">
         <img src={menu} alt="menu" className="w-7" />
       </div>

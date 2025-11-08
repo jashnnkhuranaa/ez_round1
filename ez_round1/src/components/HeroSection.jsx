@@ -9,7 +9,7 @@ const HeroSection = () => {
       {/* Mandala Background */}
       <img
         src={mandala}
-        alt="Mandala Background"
+        alt="Mandala Background" 
         className="absolute inset-0 m-auto w-[600px] opacity-60 pointer-events-none"
       />
 
