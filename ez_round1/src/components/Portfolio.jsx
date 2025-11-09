@@ -7,12 +7,12 @@ import cornerDecor from "../assets/portfolio/corner-decor.png";
 
 const Portfolio = () => {
   return (
-    <section className="relative bg-[#FEF0EC] h-screen flex flex-col items-center justify-center px-4 pt-24 overflow-hidden">
+    <section className="relative bg-[#FEF0EC] h-screen flex flex-col items-center justify-center px-4 pt-24 overflow-hidden ">
       {/* Left Camera Illustration */}
       <img
         src={cameraDecor}
         alt="Camera Decoration"
-        className="absolute left-6 bottom-12 w-28 md:w-36 mb-8 ml-2 lg:w-44 opacity-80 pointer-events-none select-none"
+        className="hidden absolute left-6 bottom-12 w-28 md:w-36 mb-8 ml-2 lg:w-44 opacity-80 pointer-events-none select-none"
       />
 
       {/* Bottom Right Mandala Decoration */}
@@ -23,12 +23,12 @@ const Portfolio = () => {
       />
 
       {/* ========== Section Title ========== */}
-      <div className="text-center mb-4 md:mb-6 z-10">
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 font-[Halant]
+      <div className="text-center mb-10 md:mb-6 z-10">
+        <h2 className="text-4xl md:text-3xl font-semibold text-gray-800 font-[Halant]
 ">
           The Highlight Reel
         </h2>
-        <p className="text-gray-600 mt-1 md:mt-2 text-sm md:text-base font-[Halant]
+        <p className="text-gray-600 mt-1  md:mt-2 text-sm md:text-base font-[Halant]
 ">
           Watch the magic we’ve captured.
         </p>

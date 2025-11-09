@@ -1,33 +1,49 @@
 import { useState } from "react";
-import menu from "../assets/close.png";
 import Navlogo from "../assets/Navbar.png";
+import navicon from "../assets/navicon.png";
 
 export default function Navbar() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <nav className="w-full bg-[#FFFBFB] fixed top-0 left-0 z-50 flex items-center justify-between px-10 py-4">
+    <nav className="w-full bg-[#FFFBFB] fixed top-0 left-0 z-50 flex items-center justify-between px-8 py-4 shadow-sm">
       {/* Left: Logo */}
       <img src={Navlogo} alt="V Films" className="w-28" />
 
-      {/* Center: Menu Items */}
+      {/* Center: Menu Items (Desktop) */}
       <ul className="hidden md:flex gap-8 text-[#000] font-[Instrument Sans] text-lg">
-        <li>Services</li>
-        <li>Their Stories</li>
-        <li>Our Story</li>
-        <li>Varnan</li>
+        <li className="hover:text-[#E85D2A] cursor-pointer">Services</li>
+        <li className="hover:text-[#E85D2A] cursor-pointer">Their Stories</li>
+        <li className="hover:text-[#E85D2A] cursor-pointer">Our Story</li>
+        <li className="hover:text-[#E85D2A] cursor-pointer">Varnan</li>
       </ul>
 
-      {/* Right: Button + Icon */}
-      <div className="hidden md:flex items-center gap-3">
+      {/* Right: “Let’s Talk” Button (Desktop Only) */}
+      <div className="hidden md:flex items-center">
         <button className="bg-[#F15D2B] text-white px-5 py-2 rounded-full shadow-md">
           Let’s Talk ✉️
         </button>
-        <img src={menu} alt="menu" className="w-8" />
       </div>
 
-      {/* mobile view */}
+      {/* Mobile Menu Icon */}
       <div className="md:hidden">
-        <img src={menu} alt="menu" className="w-7" />
+        <img
+          src={navicon}
+          alt="menu"
+          className="w-7 cursor-pointer"
+          onClick={() => setMenuOpen(!menuOpen)}
+        />
       </div>
+
+      {/* Mobile Dropdown Menu */}
+      {menuOpen && (
+        <div className="absolute top-16 left-0 w-full bg-[#FFFBFB] flex flex-col items-center gap-5 py-6 text-[#000] font-[Instrument Sans] text-lg shadow-md md:hidden">
+          <a href="#services" onClick={() => setMenuOpen(false)} className="hover:text-[#E85D2A]">Services</a>
+          <a href="#their-stories" onClick={() => setMenuOpen(false)} className="hover:text-[#E85D2A]">Their Stories</a>
+          <a href="#our-story" onClick={() => setMenuOpen(false)} className="hover:text-[#E85D2A]">Our Story</a>
+          <a href="#varnan" onClick={() => setMenuOpen(false)} className="hover:text-[#E85D2A]">Varnan</a>
+        </div>
+      )}
     </nav>
   );
 }

@@ -10,27 +10,27 @@ export default function AboutPage() {
       {/* Left Section */}
       <div className="flex flex-col justify-between h-[80%]">
         {/* Sticky Note */}
-        <div className="relative top-0 left-5 w-44 md:w-90 rotate-[-1deg] drop-shadow-lg">
+        <div className="relative top-0 left-5 w-64 md:w-90 rotate-[-1deg] drop-shadow-lg">
           <img src={Note} alt="note" className="w-full h-auto" />
         </div>
 
         {/* India Gate */}
-        <div className="relative bottom-0 left-0 w-24 md:w-60">
+        <div className="relative left-0 w-55  md:w-60">
           <img src={IndiaGate} alt="India Gate" className="w-full h-52" />
         </div>
       </div>
 
       {/* Right Section (Team + Arrows + Text) */}
-      <div className="relative flex flex-col items-center justify-center w-[80%] md:w-[68%] text-center scale-90 md:scale-95 md: right-10 top-6 left-4">
+      <div className="relative flex flex-col items-center justify-center w-[100%] mr-8 md:w-[68%] text-center scale-90 md:scale-95 md: right-10 top-6 left-4">
         <div className="relative">
-          <img src={Team} alt="Team" className="w-60 md:w-[400px] mx-auto" />
+          <img src={Team} alt="Team" className="w-80 md:w-[400px] mx-auto" />
 
           {/* Left - Branding Experts */}
           <div className="absolute -left-14 md:-left-24 top-[45%] flex flex-col items-center">
             <img
               src={Arrow}
               alt="arrow"
-              className="w-8 md:w-10 rotate-[130deg] mb-1"
+              className="w-12 md:w-10 rotate-[130deg] mb-1"
             />
             <p className="font-['Island_Moments'] text-base md:text-xl text-[#001F3F]">
               Branding Experts
