@@ -7,10 +7,10 @@ export default function Navbar() {
 
   return (
     <nav className="w-full bg-[#FFFBFB] fixed top-0 left-0 z-50 flex items-center justify-between px-8 py-4 shadow-sm">
-      {/* Left: Logo */}
+      
       <img src={Navlogo} alt="V Films" className="w-28" />
 
-      {/* Center: Menu Items (Desktop) */}
+      
       <ul className="hidden md:flex gap-8 text-[#000] font-[Instrument Sans] text-lg">
         <li className="hover:text-[#E85D2A] cursor-pointer">Services</li>
         <li className="hover:text-[#E85D2A] cursor-pointer">Their Stories</li>
@@ -18,14 +18,14 @@ export default function Navbar() {
         <li className="hover:text-[#E85D2A] cursor-pointer">Varnan</li>
       </ul>
 
-      {/* Right: “Let’s Talk” Button (Desktop Only) */}
+      
       <div className="hidden md:flex items-center">
         <button className="bg-[#F15D2B] text-white px-5 py-2 rounded-full shadow-md">
           Let’s Talk ✉️
         </button>
       </div>
 
-      {/* Mobile Menu Icon */}
+      
       <div className="md:hidden">
         <img
           src={navicon}
@@ -35,7 +35,7 @@ export default function Navbar() {
         />
       </div>
 
-      {/* Mobile Dropdown Menu */}
+      
       {menuOpen && (
         <div className="absolute top-16 left-0 w-full bg-[#FFFBFB] flex flex-col items-center gap-5 py-6 text-[#000] font-[Instrument Sans] text-lg shadow-md md:hidden">
           <a href="#services" onClick={() => setMenuOpen(false)} className="hover:text-[#E85D2A]">Services</a>

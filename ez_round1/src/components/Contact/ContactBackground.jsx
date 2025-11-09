@@ -6,12 +6,12 @@ export default function ContactBackground() {
   return (
     <>
       <img
-        src={TopRight}
+        src={BottomLeft}
         alt="Top Right Pattern"
         className="absolute top-0 right-0 w-[380px] md:w-[450px] opacity-90"
       />
       <img
-        src={BottomLeft}
+        src={TopRight}
         alt="Bottom Left Pattern"
         className="absolute bottom-0 left-0 w-[420px] md:w-[500px] opacity-90"
       />
