@@ -1,5 +1,5 @@
 import React from "react";
-import mandala from "../assets/mandala.png";
+import mandala from "../assets/Mandala.png";
 import vfilmsLogo from "../assets/vfilms-logo.png";
 import Navlogo from "../assets/Navbar.png";
 
