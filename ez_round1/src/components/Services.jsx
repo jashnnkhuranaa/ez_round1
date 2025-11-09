@@ -2,7 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#fff8f6] px-4 py-10">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#FEF0EC] px-4 py-10">
       {/* Section Title */}
       <div className="text-center mb-8">
         <h2 className="text-lg text-red-500 font-medium">Films</h2>
