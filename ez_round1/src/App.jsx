@@ -5,7 +5,7 @@ import AboutPage from "./components/AboutPage";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import Portfolio from "./components/Portfolio";
-import Contact from "./components/Contact";
+import Contact from "./components/Contact/Contact";
 function App() {
   return(
   <div>
